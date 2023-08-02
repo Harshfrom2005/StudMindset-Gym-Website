@@ -267,7 +267,7 @@ nav {
 }
 
 /* responsive design for mobile phones */
-@media (max-width: 600px){
+@media (max-width: 768px){
   .video1{
     width: 100%;
   }
@@ -342,7 +342,7 @@ nav {
 
 /* responsive code for tablets */
 
-@media (min-width: 600px) and (max-width: 1000px){
+@media (min-width: 768px) and (max-width: 1000px){
   .video1{
     width: 100%;
   }
