@@ -195,6 +195,7 @@ nav {
   .exercise-video1 , .exercise-video2{
     width: 100%;
     justify-content: center;
+    margin-top: 10px;
   }
 
 }
