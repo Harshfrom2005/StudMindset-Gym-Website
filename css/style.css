@@ -295,6 +295,10 @@ nav {
     flex-direction: row;
   }
 
+  .card-body{
+    height: fit-content;
+  }
+
   .card-outer{
     margin-bottom: 50px;
     margin-top: 10px;
