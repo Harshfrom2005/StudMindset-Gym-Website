@@ -150,9 +150,14 @@ nav {
     width: 45%;
 }
 
+.video-width{
+  width: 95%;
+  height: 380px;
+}
+
 /* responsive design for mobile phones */
 
-@media (max-width: 768px){
+@media (max-width: 600px){
   .form{
     width: 100%;
     align-items: center;
@@ -195,14 +200,19 @@ nav {
   .exercise-video1 , .exercise-video2{
     width: 100%;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+
+  .video-width{
+    width: 85%;
+    height: 250px;
   }
 
 }
 
 /* responsive design for tablets */
 
-@media (min-width: 768px) and (max-width: 1000px){
+@media (min-width: 600px) and (max-width: 1000px){
   .form{
     width: 100%;
     align-items: center;
