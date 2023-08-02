@@ -1,330 +1,172 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: black;
   overflow-x: hidden;
+  color: wheat;
 }
+
+ /* navbar section starts here  */
 
 nav {
-  background-color: black;
-}
-
-.container-fluid {
-  margin-left: 30px;
-  align-items: center;
-  overflow-x: hidden;
-}
-
-.navs {
-  color: white;
-  text-decoration: none;
-  padding-top: 10px;
-  font-size: large;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.left {
-  display: flex;
-}
-
-.navtab {
-  margin-left: 50px;
-}
-
-.upgrades {
-  font-weight: bolder;
-  font-style: italic;
-}
-
-.searchbar {
-  width: 300px;
-  background-color: rgb(79 79 66);
-  border-radius: 15px;
-  color: white;
-  outline: none;
-  border: none;
-  text-indent: 10px;
-  height: 40px;
-}
-
-.searchbar::placeholder {
-  color: rgba(255, 255, 255, 0.596);
-  padding-left: 20px;
-  background-image: url("/img/search.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-right: 25px;
-}
-
-.user-account {
-  height: 35px;
-  margin-left: 15px;
-  padding-top: 5px;
-}
-
-.form {
-  display: flex;
-  flex-grow: 1;
-}
-
-.right {
-  padding-right: 80px;
-}
-
-.video-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video1 {
-  position: relative;
-  padding-bottom: 56.25%; /* Set the desired aspect ratio (16:9 in this case) */
-  height: 0;
-  overflow: hidden;
-}
-
-.excuses {
-  margin-left: 400px;
-  color: white;
-  font-style: italic;
-}
-
-/* #mute-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-} */
-
-.articles {
-  width: 1349px;
-}
-
-.cards {
-  margin-bottom: 1rem !important;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  height: 400px;
-  margin-left: 130px;
-  justify-content: center; /* Center the cards horizontally */
-  align-items: center; /* Center the cards vertically */
-  margin: 0 auto; /* Add this line to center the entire section */
-}
-
-.card-outer {
-  border-radius: 5px;
-}
-
-.card-header {
-  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-  margin-bottom: 0;
-  color: var(--bs-card-cap-color);
-  background-color: var(--bs-card-cap-bg);
-  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border: solid white;
-  margin-top: 5px;
-  width: 400px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.card-header h4 {
-  color: white;
-}
-
-.card-body {
-  height: 320px;
-  border: solid white;
-}
-
-.card-title {
-  color: white;
-  margin-left: 100px;
-  margin-top: 20px;
-  font-weight: bolder;
-}
-
-.per-month {
-    color: white;
-    margin-left: 170px;
-    font-size: 35px;
-    font-weight: lighter;
-    margin-top: -48px;
-}
-
-/* .bronze-benefits-section{
-  display: flex;
-}
-
-.silver-benefits-section{
-  display: flex;
-}
-
-.gold-benefits-section{
-  display: flex;
-} */
-
-.benefits {
-  margin: 5px 0;
-}
-
-.card-body {
-  padding: 10px;
-}
-
-.bronze-benefits-section,
-.silver-benefits-section,
-.gold-benefits-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 10px;
-}
-
-.benefits{
-  color: white;
-}
-
-.button{
-  margin-top: 30px;
-  width: 200px;
-  margin-bottom: 10px;
-  margin-left: 80px;
-  border: 2px solid rgb(236, 145, 54);
-  color: rgb(245, 139, 32);
+    background-color: black;
+  }
   
+  .container-fluid {
+    margin-left: 30px;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .navs {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: large;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .left {
+    display: flex;
+  }
+  
+  .navtab {
+    margin-left: 50px;
+  }
+  
+  .upgrades {
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  .searchbar {
+    width: 300px;
+    background-color: rgb(79 79 66);
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    height: 40px;
+  }
+  
+  .searchbar::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+    padding-left: 20px;
+    background-image: url("/img/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 25px;
+  }
+  
+  .user-account {
+    height: 35px;
+    margin-left: 15px;
+    padding-top: 5px;
+  }
+  
+  .form {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .right {
+    padding-right: 80px;
+  }
+
+  .account {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100px; /* Adjust the width as needed for your theme */
+  }
+  
+  .dropdown-content a {
+    display: flex; /* Use flex display to align options in one line */
+    align-items: center; /* Center align the content vertically */
+    color: white; /* Set the text color to white */
+    text-decoration: none;
+    padding: 8px 12px;
+    white-space: nowrap; /* Prevent line break for longer text */
+    background-color: black; /* Set the initial background color to black */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth color change */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Change the background color on hover */
+    color: black; /* Change the text color to black on hover */
+  }
+  
+  .dropdown-content a:active {
+    background-color: #e1e1e1; /* Change the background color when clicked */
+    color: black; /* Change the text color to black when clicked */
+  }
+  
+  .account:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* navbar section ends here */
+
+
+.exercise-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
-.button:hover{
-  background-color: rgb(224, 138, 52);
-  color: black;
+.exercise-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-#silver-btn{
-  border: 2px solid #b3b0b0;
-  color: #cfcbcb;
+.exercise-heading h1 {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#silver-btn:hover{
-  background-color: #aca8a8;
-  color: black;
+.exercise-video-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-#gold-btn{
-  border: 2px solid #ffd200;
-  color: #ffd200;
+.exercise-video1{
+    display: flex;
+    width: 45%;
 }
 
-#gold-btn:hover{
-  background-color: #ffd200;
-  color: black;
+.exercise-video2{
+    display: flex;
+    width: 45%;
 }
 
-.account {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 100px; /* Adjust the width as needed for your theme */
-}
-
-.dropdown-content a {
-  display: flex; /* Use flex display to align options in one line */
-  align-items: center; /* Center align the content vertically */
-  color: white; /* Set the text color to white */
-  text-decoration: none;
-  padding: 8px 12px;
-  white-space: nowrap; /* Prevent line break for longer text */
-  background-color: black; /* Set the initial background color to black */
-  transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth color change */
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1; /* Change the background color on hover */
-  color: black; /* Change the text color to black on hover */
-}
-
-.dropdown-content a:active {
-  background-color: #e1e1e1; /* Change the background color when clicked */
-  color: black; /* Change the text color to black when clicked */
-}
-
-.account:hover .dropdown-content {
-  display: block;
+.video-width{
+  width: 95%;
+  height: 380px;
 }
 
 /* responsive design for mobile phones */
-@media (max-width: 768px){
-  .video1{
-    width: 100%;
-  }
-  .excuses{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-  }
 
-  .afterbr{
-    width: 100%;
-  }
-
-  .redimage{
-    width: 100%;
-  }
-
-  .redimage img{
-    width: 100%;
-  }
-
-  .cards{
-    width: 100%;
-    flex-direction: row;
-  }
-
-  .card-body{
-    height: fit-content;
-  }
-
-  .card-outer{
-    margin-bottom: 50px;
-    margin-top: 10px;
-    width: 95%;
-  }
-
-  .card-header{
-    width: 100%;
-  }
-
-  .button{
-    margin-top: 30px;
-  }
-
+@media (max-width: 600px){
   .form{
     width: 100%;
     align-items: center;
     justify-content: center;
+    
   }
 
   .searchbar{
     width: 220px;
-  }
-
-  .left{
-    margin-left: -10px;
   }
 
   .right {
@@ -332,53 +174,45 @@ nav {
     justify-content: center;
     width: 100%;
     padding-right: 0px;
+    margin-top: 10px;
   }
 
   .navs{
     font-size: small;
   }
 
-}
-
-/* responsive code for tablets */
-
-@media (min-width: 768px) and (max-width: 1000px){
-  .video1{
-    width: 100%;
+  .exercise-heading h1{
+    font-size: x-large;
   }
-  .excuses{
+
+  .exercise-section{
+    margin-top: 20px;
+  }
+
+  .exercise-video-container {
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-  }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
 
-  .afterbr{
+  .exercise-video1 , .exercise-video2{
     width: 100%;
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  .redimage{
-    width: 100%;
+  .video-width{
+    width: 85%;
+    height: 250px;
   }
 
-  .redimage img{
-    width: 100%;
-  }
+}
 
-  .cards{
-    width: 100%;
-    flex-direction: row;
-  }
+/* responsive design for tablets */
 
-  .card-outer{
-    margin-bottom: 50px;
-    margin-top: 10px;
-  }
-
-  .button{
-    margin-top: 30px;
-  }
-
+@media (min-width: 600px) and (max-width: 1000px){
   .form{
     width: 100%;
     align-items: center;
