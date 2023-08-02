@@ -176,6 +176,10 @@ nav {
     font-size: small;
   }
 
+  .exercise-heading h1{
+    font-size: x-large;
+  }
+
   .exercise-section{
     margin-top: 20px;
   }
@@ -190,9 +194,12 @@ nav {
 
   .exercise-video1 , .exercise-video2{
     width: 100%;
+    justify-content: center;
   }
 
 }
+
+/* responsive design for tablets */
 
 @media (min-width: 600px) and (max-width: 1000px){
   .form{
