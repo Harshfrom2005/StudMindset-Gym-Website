@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudMindset - A Website only for people who want to grow</title>
+  <link rel="icon" href="img/newl.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <div style="display: flex" class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/newl.png" alt="Logo" height="48" class="d-inline-block align-text-top" />
+          </a>
+
+          <div style="display: flex" class="navs">
+            <a class="nav-link active upgrades" style="margin-left: 10px" aria-current="page"
+              href="http://127.0.0.1:5500/index.html">Home</a>
+            <a class="nav-link upgrades navtab" href="http://127.0.0.1:5500/videos.html" target="_blank">Videos</a>
+            <a class="nav-link upgrades navtab" href="http://127.0.0.1:5500/form.html" target="_blank">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="form">
+          <form action="search" method="get" class="search-form">
+            <input type="text" name="search" placeholder="Find Your Purpose" class="searchbar" />
+          </form>
+          <div class="account">
+            <div class="user">
+              <a href="#"><img src="img/user.png" alt="user account" class="user-account" /></a>
+            </div>
+            <div class="dropdown-content">
+              <a href="http://127.0.0.1:5500/form.html" target="_blank">Sign Up</a>
+              <a href="#">Log In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="body">
+    <div class="video1">
+      <video src="img/finalvideo1.mp4" autoplay loop muted class="video-player"></video>
+      <!-- <button id="mute-toggle">Mute</button> -->
+    </div>
+    <div class="afterbr">
+      <div class="redimage">
+        <img class="articles" src="img/articles.jpg" alt="articles" />
+      </div>
+      <div class="training"></div>
+      <div class="competition"></div>
+      <div class="nutrition"></div>
+      <div class="health"></div>
+      <div class="fitlife"></div>
+      <div class="tools"></div>
+    </div>
+  </div>
+
+
+
+  <div class="cards">
+    <div class="card-outer">
+      <div class="card-inner">
+        <div class="card-header">
+          <h4>Bronze</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title">$50</h1>
+          <p class="per-month">/mo</p>
+          <!-- <div class="bronze-benefits-section"> -->
+          <p class="benefits">(1) Access to gym facilities during regular hours.</p>
+          <p class="benefits">(2) Discounted rates on fitness classes.</p>
+          <p class="benefits">(3) Personal locker for storing belongings.</p>
+          <p class="benefits">(4) Complimentary towel service.</p>
+          <p class="benefits">(5) Access to cardio and strength training equipment.</p>
+          <p class="benefits">(6) Free Wi-Fi available in the gym.</p>
+          <p class="benefits">(7) On-site parking facilities.</p>
+          <span><a href="http://127.0.0.1:5500/form.html" target="_blank"><button type="button"
+                class="button btn"><b>Get the plan</b></button></a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-outer">
+      <div class="card-inner">
+        <div class="card-header">
+          <h4>Silver</h4>
+        </div>
+        <div class="card-body" id="silver">
+          <h1 class="card-title">$90</h1>
+          <p class="per-month" style="margin-left: 170px">/mo</p>
+          <!-- <div class="silver-benefits-section"> -->
+          <p class="benefits">(1) Access to all Bronze plan benefits.</p>
+          <p class="benefits">(2) Unlimited access to fitness classes.</p>
+          <p class="benefits">(3) Additional discount on personal training sessions.</p>
+          <p class="benefits">(4) Extended gym hours.</p>
+          <p class="benefits">(5) Priority access to new equipment.</p>
+          <p class="benefits">(6) Sauna and steam room facilities.</p>
+          <p class="benefits">(7) Towel service for workouts and showers.</p>
+          <span><a href="http://127.0.0.1:5500/form.html" target="_blank"><button type="button" class="button btn"
+                id="silver-btn"><b>Get the plan</b></button></a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-outer">
+      <div class="card-inner">
+        <div class="card-header" style="width: 418px;">
+          <h4>Gold</h4>
+        </div>
+        <div class="card-body" id="gold">
+          <h1 class="card-title">$150</h1>
+          <p class="per-month" style="margin-left: 190px">/mo</p>
+          <!-- <div class="gold-benefits-section"> -->
+          <p class="benefits">(1) Access to all Silver plan benefits.</p>
+          <p class="benefits">(2) Personalized workout program from a fitness expert.</p>
+          <p class="benefits">(3) Exclusive access to VIP training area.</p>
+          <p class="benefits">(4) Nutritional guidance and meal planning.</p>
+          <p class="benefits">(5) Complimentary smoothies at the gym's juice bar.</p>
+          <p class="benefits">(6) Access to specialized fitness workshops.</p>
+          <p class="benefits">(7) Complimentary sports massage sessions.</p>
+          <span><a href="http://127.0.0.1:5500/form.html" target="_blank"><button type="button" class="button btn"
+                id="gold-btn"><b>Get the plan</b></button></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+body {
+  background-color: black;
+  overflow-x: hidden;
+  color: wheat;
+}
+
+ /* navbar section starts here  */
+
+nav {
+    background-color: black;
+  }
+  
+  .container-fluid {
+    margin-left: 30px;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .navs {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: large;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .left {
+    display: flex;
+  }
+  
+  .navtab {
+    margin-left: 50px;
+  }
+  
+  .upgrades {
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  .searchbar {
+    width: 300px;
+    background-color: rgb(79 79 66);
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    height: 40px;
+  }
+  
+  .searchbar::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+    padding-left: 20px;
+    background-image: url("/img/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 25px;
+  }
+  
+  .user-account {
+    height: 35px;
+    margin-left: 15px;
+    padding-top: 5px;
+  }
+  
+  .form {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .right {
+    padding-right: 80px;
+  }
+
+  .account {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100px; /* Adjust the width as needed for your theme */
+  }
+  
+  .dropdown-content a {
+    display: flex; /* Use flex display to align options in one line */
+    align-items: center; /* Center align the content vertically */
+    color: white; /* Set the text color to white */
+    text-decoration: none;
+    padding: 8px 12px;
+    white-space: nowrap; /* Prevent line break for longer text */
+    background-color: black; /* Set the initial background color to black */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth color change */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Change the background color on hover */
+    color: black; /* Change the text color to black on hover */
+  }
+  
+  .dropdown-content a:active {
+    background-color: #e1e1e1; /* Change the background color when clicked */
+    color: black; /* Change the text color to black when clicked */
+  }
+  
+  .account:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* navbar section ends here */
+
+
+.exercise-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.exercise-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.exercise-heading h1 {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.exercise-video-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.exercise-video1{
+    display: flex;
+    width: 45%;
+}
+
+.exercise-video2{
+    display: flex;
+    width: 45%;
+}
+
+/* responsive design for mobile phones */
+
+@media (max-width: 600px){
+  .form{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .searchbar{
+    width: 220px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 10px;
+  }
+
+  .navs{
+    font-size: small;
+  }
+
+  .exercise-section{
+    margin-top: 20px;
+  }
+
+  .exercise-video-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+  .exercise-video1 , .exercise-video2{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+  .form{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchbar{
+    width: 220px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding-right: 0px;
+  }
+
+  .navs{
+    font-size: medium;
+  }
+}
