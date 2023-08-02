@@ -305,6 +305,10 @@ nav {
     width: 100%;
   }
 
+  .card-body{
+    height: fit-content;
+  }
+
   .button{
     margin-top: 30px;
   }
@@ -361,7 +365,7 @@ nav {
     width: 100%;
     flex-direction: row;
   }
-
+  
   .card-outer{
     margin-bottom: 50px;
     margin-top: 10px;
